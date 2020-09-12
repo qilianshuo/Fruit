@@ -5,12 +5,12 @@
 ### 主页地址:
 http://wechat.v2.traceint.com/index.php/reserve/index.html
 
-(```)
+```
   <a href="javascript:;" data-url="/index.php/reserve/layout/libid=10557.html&amp;1599880808" class="list-group-item ">
     <h4 class="list-group-item-heading">南301中文图书借阅七厅 (3楼) 	<span class="badge" style="background: none; color:#5c84bd; font-size: 16px;">18/72</span> </h4>
     <p class="list-group-item-text">		8:00 ~  22:15	开馆前可提前 30分钟 预定		</p>
   </a>
-(```)
+```
 从中可以找到区域id
 ### 座位列表
 http://wechat.v2.traceint.com/index.php/reserve/layout/libid=10550.html&1599880808
@@ -21,11 +21,11 @@ http://wechat.v2.traceint.com/index.php/reserve/get/libid=10550&RAe2fw=21,15&yzm
 libid -> 区域id
 RAe2fw -> 随机字符串
 21,15 -> 座位坐标,关键字'data-key'
-(```)
+```
   <div class="grid_cell  grid_active grid_status3" data-key="15,15" style="left:560px;top:560px;">
   <em>8</em>
   </div>
-(```)
+```
 
 ### RAe2fw生成
 http://wechat.v2.traceint.com/index.php/reserve/layout/libid=10550.html&1599880808
@@ -34,7 +34,7 @@ http://wechat.v2.traceint.com/index.php/reserve/layout/libid=10550.html&15998808
 `<script src="http://static.wechat.v2.traceint.com/template/theme2/js/layout-zoom-no-reserve.js"></script>`
 
 下面是一个例子
-(```)
+```
   var G = function(t) {
     var r = ""
       , a = []
@@ -107,7 +107,7 @@ http://wechat.v2.traceint.com/index.php/reserve/layout/libid=10550.html&15998808
     })
   }
   ;
-(```)
+```
 思路一:
 正则查找 [a-zA-Z]+ = [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z];
 然后把[a-zA-Z]+放到第一个函数里,得到的返回值就是需要的字符串
