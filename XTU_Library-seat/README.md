@@ -20,7 +20,9 @@ http://wechat.v2.traceint.com/index.php/reserve/layout/libid=10550.html&15998808
 http://wechat.v2.traceint.com/index.php/reserve/get/libid=10550&RAe2fw=21,15&yzm=
 
 libid -> 区域id
+
 RAe2fw -> 随机字符串
+
 21,15 -> 座位坐标,关键字'data-key'
 
 ```html
@@ -29,9 +31,10 @@ RAe2fw -> 随机字符串
   </div>
 ```
 
-### RAe2fw生成
+#### RAe2fw生成
 http://wechat.v2.traceint.com/index.php/reserve/layout/libid=10550.html&1599880808
-在座位列表的HTML中分析查找(倒数第三行)
+
+在座位列表的HTML中分析查找(大概倒数第三行?)
 
 `<script src="http://static.wechat.v2.traceint.com/template/theme2/js/layout-zoom-no-reserve.js"></script>`
 
@@ -112,4 +115,5 @@ http://wechat.v2.traceint.com/index.php/reserve/layout/libid=10550.html&15998808
 ```
 思路一:
 正则查找 [a-zA-Z]+ = [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z];
+
 然后把[a-zA-Z]+放到第一个函数里,得到的返回值就是需要的字符串
