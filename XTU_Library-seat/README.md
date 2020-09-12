@@ -36,7 +36,7 @@ http://wechat.v2.traceint.com/index.php/reserve/layout/libid=10550.html&15998808
 
 在座位列表的HTML中分析查找(大概倒数第三行?)
 
-`<script src="http://static.wechat.v2.traceint.com/template/theme2/js/layout-zoom-no-reserve.js"></script>`
+`<script src="http://static.wechat.v2.traceint.com/template/theme2/cache/layout/bMtmT7rnm8WYTXtN.js"></script>`
 
 下面是一个例子
 ```javascript
