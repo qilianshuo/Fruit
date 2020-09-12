@@ -21,7 +21,7 @@ http://wechat.v2.traceint.com/index.php/reserve/get/libid=10550&RAe2fw=21,15&yzm
 libid -> 区域id
 RAe2fw -> 随机字符串
 21,15 -> 座位坐标,关键字'data-key'
-```
+```html
   <div class="grid_cell  grid_active grid_status3" data-key="15,15" style="left:560px;top:560px;">
   <em>8</em>
   </div>
@@ -34,7 +34,7 @@ http://wechat.v2.traceint.com/index.php/reserve/layout/libid=10550.html&15998808
 `<script src="http://static.wechat.v2.traceint.com/template/theme2/js/layout-zoom-no-reserve.js"></script>`
 
 下面是一个例子
-```
+```javascript
   var G = function(t) {
     var r = ""
       , a = []
