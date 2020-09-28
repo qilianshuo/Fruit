@@ -113,7 +113,4 @@ http://wechat.v2.traceint.com/index.php/reserve/layout/libid=10550.html&15998808
   }
   ;
 ```
-思路一:
-正则查找 [a-zA-Z]+ = [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z] + [a-zA-Z];
 
-然后把[a-zA-Z]+放到第一个函数里,得到的返回值就是需要的字符串
