@@ -1,6 +1,12 @@
 # 图书馆占座分析
 
-## 自行抓Cookies或登录网址
+## 自行抓Cookies或登录网址!
+
+## 自行抓Cookies或登录网址!!
+
+## 自行抓Cookies或登录网址!!!
+
+## 必须使用Nodejs环境,不然Execjs模块会崩溃
 
 ### 主页地址:
 http://wechat.v2.traceint.com/index.php/reserve/index.html
