@@ -45,7 +45,7 @@ class Libary:
         for room in room_list:
             if int(room[2].split('/')[0]):
                 self.vacant_room[room[1]] = config.BASE_URL + room[0]
-        if self.vacant_room is None:
+        if not self.vacant_room:
             log_print('无空闲房间')
             return False
         else:
