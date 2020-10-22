@@ -6,7 +6,9 @@
 # @File    : config.py
 # @Software: PyCharm
 
-login_link = 'http://wechat.v2.traceint.com/index.php/schoolpushh5/registerLogin?sch_id=10062&stud_name=%E9%BD%90%E8%BF%9E%E7%A1%95&stud_no=201905555607&sign=fda68ba232a40323f6aac0112d13f5ff'
+
+"""!!! login_link很重要!!! 很重要!!! 自己在手机APP湘大校园抓包"""
+login_link = ''
 DATA_URL = 'http://wechat.v2.traceint.com/data/'
 STATIC_URL = 'http://static.wechat.v2.traceint.com/static/'
 BASE_URL = 'http://wechat.v2.traceint.com'
