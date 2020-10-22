@@ -69,9 +69,11 @@ class Libary:
 
     def select_seat(self):
         log_print('当前选定座位：%s号' % list(self.vacant_seat.keys())[0])
+        self.session.get(list(self.vacant_room.values())[0], headers=config.headers)
         resp = self.session.get(list(self.vacant_room.values())[0], headers=config.headers)
         resp.encoding = resp.apparent_encoding
         js_url = re.findall(r'<script src="(.*?)">', resp.text)[1]
+        print(js_url)
         key = Utils.get_seat_key(js_url)
         libid = re.findall(r'libid=(.*?).html', list(self.vacant_room.values())[0])[0]
         select_url = config.SELECT_URL+'%s&%s=%s&yzm=' % (libid, key, list(self.vacant_seat.values())[0])
@@ -83,7 +85,11 @@ class Libary:
             return False
 
     def refresh_seat(self):
-        while self.login() and self.find_room() and self.find_seat() and self.select_seat() is not True:
+        if not self.login():
+            print('登录失败')
+            return False
+        while (self.find_room() and self.find_seat() and self.select_seat()) is not True:
+            print('即将继续查找')
             time.sleep(1)
 
 
