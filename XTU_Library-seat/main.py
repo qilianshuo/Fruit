@@ -3,7 +3,7 @@
 # @Time    : 2020/9/12 19:48
 # @Author  : Qi
 # @Email   : 2087989820@qq.com
-# @File    : Utils.py
+# @File    : main.py
 # @Software: PyCharm
 import re
 import config
